@@ -102,6 +102,84 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    errorBtns[0].addEventListener('click', () => {
+      console.log("Console Log Demo");
+    });
+
+    errorBtns[1].addEventListener('click', () => {
+      console.error("Console Error Demo");
+    });
+
+    errorBtns[2].addEventListener('click', () => {
+      console.count("Console Count Demo");
+    });
+
+    errorBtns[3].addEventListener('click', () => {
+      console.warn("Console Warn Demo");
+    }); 
+
+    errorBtns[4].addEventListener('click', () => {
+      console.assert(2 === 1, {"number": 2, "errorMsg": "The number does not equal 1"});
+    });
+
+    errorBtns[5].addEventListener('click', () => {
+      console.clear('Console was cleared');
+    });
+
+    errorBtns[6].addEventListener('click', () => {
+      console.dir(document.getElementById("console-dir"));
+    });
+
+    errorBtns[7].addEventListener('click', () => {
+      console.dirxml(document.getElementById("console-dirxml"));
+    });
+
+    errorBtns[8].addEventListener('click', () => {
+      console.group('console.group');
+    });
+
+    errorBtns[8].addEventListener('click', () => {
+      console.group('console.group');
+    });
+
+    errorBtns[9].addEventListener('click', () => {
+      console.groupEnd();
+    });
+
+    errorBtns[10].addEventListener('click', () => {
+      console.table([
+      {
+        name: 'Software Engineering',
+        num: 150
+      },
+      {
+        name: 'Programming Languages',
+        num: 150
+      },
+      {
+        name: 'Advanced Software Engineering',
+        num: 152
+      }
+      ]);
+    });
+
+
+    errorBtns[10].addEventListener('click', () => {
+      console.time("Timer Button");
+    });
+
+    errorBtns[11].addEventListener('click', () => {
+      console.timeEnd("Timer Button");
+    });
+
+    errorBtns[12].addEventListener('click', () => {
+      console.trace();
+    });
+
+    errorBtns[13].addEventListener('click', () => {
+      const trigger = 1;
+      trigger = 2;
+    });
   </script>
 </body>
 
